@@ -244,6 +244,14 @@ ggsave(filename = "y20_farmsense_vs_sticky_ppo_scatter.jpg",
 
 cor.test(ppo_plot$Wing,ppo_plot$Farmsense,
          method = "spearman")
+# Spearman's rank correlation rho
+# 
+# data:  ppo_plot$Wing and ppo_plot$Farmsense
+# S = 82402, p-value = 7.907e-07
+# alternative hypothesis: true rho is not equal to 0
+# sample estimates:
+#      rho 
+# 0.474641 
 
 #-- 6. Use ggpubr to get the two correlation plots into single figure -------
 
@@ -257,12 +265,5 @@ ggsave(filename = "y20_farmsense_2cor_scatter_plots.jpg",
        plot = p2p3, device = "jpg", path = "./results/", 
        dpi = 300, width = 5.83, height = 2.83, units = "in")
 
-# Spearman's rank correlation rho
-# 
-# data:  ppo_plot$Wing and ppo_plot$Farmsense
-# S = 82402, p-value = 7.907e-07
-# alternative hypothesis: true rho is not equal to 0
-# sample estimates:
-#      rho 
-# 0.474641 
+
 
