@@ -9,7 +9,7 @@ as determined by FarmSense monitors when using pheromone, PPO, and pistachio
 ovibait as bait. The study used an RBCD arrangement, with sections of row-ends 
 in a pistachio plot serving as replicate blocks.
 
-The experiment is described in greater detail in "farmsense_report.pdf".
+The experiment is described in greater detail in "report-no-endnote_v02.pdf".
 A visual representation of the plot is found in 
 "farmsense_experiment_2020_06_30b.jpg", and the Google Earth file
 "mwoolf-farmsense-expt-2020-07-01.kml" provides latitude/longitdue 
