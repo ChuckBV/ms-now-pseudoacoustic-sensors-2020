@@ -97,7 +97,7 @@ fscounts <- fscounts %>% # drops 208 obs
   filter(date_pdt > as.Date("2020-07-10"))
 
 ### Examine distribution of count events
-p1 <- ggplot(fscounts, aes(x = hr_pdt)) +
+ggplot(fscounts, aes(x = hr_pdt)) +
   geom_bar() +
   theme_bw() +
   xlab("Hour of Day (Pacific Daylight Time)") +
@@ -108,13 +108,6 @@ p1 <- ggplot(fscounts, aes(x = hr_pdt)) +
         axis.title.y = element_text(color = "black", size = 12),
         legend.title = element_text(color = "black", size = 12),
         legend.text = element_text(color = "black", size = 10))
-
-p1 
-
-ggsave(filename = "y20_farmsense_raw_counts_by_hour.jpg", 
-       plot = p1, device = "jpg", path = "./results/", 
-       dpi = 300, width = 5.83, height = 4.05, units = "in") 
-
 ### Indicates spike at th 6AM hour. Further explore by month
 
 y <- fscounts # y is a temperary data frame for this exploration
