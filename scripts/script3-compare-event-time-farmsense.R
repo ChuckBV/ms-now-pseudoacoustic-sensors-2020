@@ -73,7 +73,7 @@ counts_all <- x %>%
 
 counts_all
 
-p4 <- ggplot(counts_all, aes(x = hr_of_nt, y = Count)) +
+ggplot(counts_all, aes(x = hr_of_nt, y = Count)) +
   geom_bar(stat = "identity") +
   theme_bw() +
   xlab("Hour of night") +
@@ -84,12 +84,6 @@ p4 <- ggplot(counts_all, aes(x = hr_of_nt, y = Count)) +
         axis.title.y = element_text(color = "black", size = 12),
         legend.title = element_text(color = "black", size = 12),
         legend.text = element_text(color = "black", size = 10))
-
-p4
-
-# ggsave(filename = "y20_farmsense_detections_by_hour.jpg", 
-#        plot = p4, device = "jpg", path = "./results/", 
-#        dpi = 300, width = 5.83, height = 3.85, units = "in") 
 
 ### By lure and month
 
